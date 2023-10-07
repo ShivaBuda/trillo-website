@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(color(primary), 0.8),
+        rgba(color(tertiary), 0.9)
+    );
+    background-repeat: no-repeat;
+    line-height: 1.5;
+    color: color(grey-dark-2);
+    font-weight: 400;
+
+    min-height: 100vh;
+}

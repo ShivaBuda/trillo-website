@@ -1,0 +1,416 @@
+.coy__logo {
+    font-size: size(md);
+    color: color(primary);
+    margin: 0.6rem 0 0.6rem 3rem;
+}
+
+.search {
+    flex: 0 0 40%;
+    @include flexCenter;
+
+    &__input {
+        width: 90%;
+        border: none;
+        padding: 0.6rem 2rem;
+        border-radius: 100px;
+        background-color: color(grey-light-3);
+        margin-right: -3rem;
+        color: inherit;
+        font-family: inherit;
+        font-size: size(xsm);
+        transition: width 0.5s ease-out;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: color(grey-light-3);
+        }
+    }
+
+    &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: color(grey-dark-2);
+        @include flexCenter;
+    }
+}
+
+.notification {
+    display: flex;
+    align-self: stretch;
+
+    & > * {
+        @include flexCenter;
+        padding: 0 size(xsm);
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+
+    & > *:hover {
+        background-color: color(grey-light-4);
+    }
+
+    .icon__box {
+        position: relative;
+    }
+    .header__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: color(grey-dark-2);
+    }
+
+    .message__number {
+        position: absolute;
+        top: -0.8rem;
+        right: -0.4rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        background-color: color(primary);
+        border-radius: 100px;
+        color: color(grey-light-1);
+        font-size: 0.8rem;
+        @include flexCenter;
+    }
+}
+
+.user {
+    &__img {
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 100px;
+        margin-right: 0.8rem;
+        border: 1px solid color(tertiary);
+    }
+    &__name {
+        font-weight: 600;
+    }
+}
+
+// Gallery
+
+.gallery {
+    display: flex;
+
+    &__img {
+        width: 100%;
+        height: 21rem;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
+
+.hotel {
+    &__detail {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid color(grey-light-3);
+    }
+    &__title {
+        @include flexCenter;
+    }
+
+    &__name {
+        font-size: size(sm);
+        font-weight: 300;
+        margin: auto 2rem;
+        text-transform: uppercase;
+    }
+
+    &__rating {
+        display: flex;
+    }
+    &__star {
+        width: 1.4rem;
+        height: 1.4rem;
+        fill: color(tertiary);
+    }
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        margin: auto 2rem auto 0.3rem;
+    }
+
+    &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: color(tertiary);
+    }
+}
+
+.btn__link:link,
+.btn__link:visited {
+    @include flexCenter;
+    color: color(tertiary);
+    text-decoration: none;
+}
+
+.btn {
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 3px;
+    transition: all 0.2s;
+
+    &:hover {
+        color: color(grey-dark-2);
+    }
+
+    &:active {
+        animation: pulsate 0.5s infinite;
+    }
+}
+
+.voting__number {
+    background-color: color(tertiary);
+    font-size: size(sm);
+    font-weight: 300;
+    color: color(grey-light-1);
+    text-align: center;
+    padding: 0.8rem 1.6rem;
+    line-height: 1.2;
+
+    .votes {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 2rem rgba(color(grey-black), 0.2);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+// about
+
+.about {
+    &__paragraph {
+        &:nth-child(1) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+.feature {
+    padding: size(md) 0;
+    margin: 3.2rem auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid color(grey-light-3);
+    border-bottom: 1px solid color(grey-light-3);
+    line-height: 1.9;
+
+    &__list {
+        width: 50%;
+    }
+    &__icon {
+        width: 1rem;
+        height: 1rem;
+        fill: color(tertiary);
+        margin-right: 0.8rem;
+    }
+}
+
+.recommend {
+    margin-bottom: size(md);
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+        font-size: 1.2rem;
+        @include flexCenter;
+    }
+}
+
+.photo {
+    display: flex;
+    &__user {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 2px solid color(grey-light-2);
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: -0.8rem;
+        }
+
+        //    &:nth-child(2) {
+        //        transform: translateX(-10px);
+        //    }
+        //    &:nth-child(3) {
+        //        transform: translateX(-20px);
+        //    }
+        //    &:nth-child(4) {
+        //        transform: translateX(-30px);
+        //    }
+    }
+}
+
+//   User Review
+.review {
+    &__content {
+        position: relative;
+        background-color: color(grey-white);
+        box-shadow: 0 1rem 2rem rgba(color(grey-black), 0.15);
+        padding: 3rem;
+        margin-bottom: size(md);
+        overflow: hidden;
+
+        &:before {
+            content: "\201C";
+            font-family: sans-serif;
+            font-size: 30rem;
+            position: absolute;
+            top: -4rem;
+            left: -1.5rem;
+            line-height: 1;
+            display: inline-block;
+            color: color(grey-light-2);
+            z-index: 1;
+        }
+    }
+
+    &__text {
+        position: relative;
+        margin-bottom: 2rem;
+        z-index: 2;
+    }
+    &__user__photo {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+
+    &__user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__user__name {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1rem;
+        color: color(grey-dark-3);
+    }
+
+    &__date {
+        font-size: 0.9rem;
+    }
+
+    &__name__date {
+        margin-right: auto;
+        line-height: 1.8;
+    }
+
+    &__rate {
+        font-size: size(md);
+        color: color(primary);
+        font-weight: 300;
+    }
+
+    &__btn {
+        margin-left: 3px;
+        transition: all 0.2s;
+        border-bottom: 2px solid currentColor;
+        padding-bottom: 3px;
+        transition: all 0.2s;
+
+        &:hover {
+            color: color(grey-dark-2);
+        }
+        span {
+            margin-right: 3px;
+            transition: margin-right 0.2s;
+        }
+
+        &:hover span {
+            margin-right: 8px;
+        }
+
+        &:active {
+            animation: pulsate 0.5s infinite;
+        }
+    }
+}
+
+//////////////////////////////
+// CTA Section
+.cta {
+    // @include flexCenter;
+    // flex-direction: column;
+    text-align: center;
+    &__heading {
+        margin: 2rem auto;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: size(xsm);
+    }
+
+    &__btn {
+        position: relative;
+        text-transform: uppercase;
+        border-radius: 50px;
+        background: linear-gradient(
+            to right,
+            rgba(color(primary), 0.8),
+            rgba(color(tertiary), 0.9)
+        );
+        color: color(grey-light-1);
+        border: none;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        overflow: hidden;
+
+        &:hover &__hidden {
+            top: 0;
+        }
+        &:hover &__shown {
+            top: 100%;
+        }
+
+        &__hidden {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            background: linear-gradient(
+               to right,
+               rgba(color(tertiary), 0.8),
+               rgba(color(primary), 0.9)
+           );
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            padding: 1rem;
+            transition: all 0.3s;
+        }
+
+        &__shown {
+            position: relative;
+            display: inline-block;
+            padding: 1rem 6rem;
+            transition: all 0.3s;
+            top: 0;
+            left: 0;
+        }
+
+        &:focus{
+          animation: pulsate 0.3s infinite;
+        }
+    }
+}

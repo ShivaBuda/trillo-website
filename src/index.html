@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>Trillo | WELCOME</title>
+    </head>
+    <body>
+        <div class="main__container">
+            <header class="header">
+                <div class="coy__logo">
+                    <i class="fa-brands fa-think-peaks"></i>
+                </div>
+                <form class="search">
+                    <input
+                        type="text"
+                        class="search__input"
+                        placeholder="Search hotels"
+                        id="search" />
+                    <label for="search" class="search__btn">
+                        <svg class="search__icon">
+                            <use
+                                xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </label>
+                </form>
+                <div class="notification">
+                    <div class="bookmark">
+                        <div class="icon__box">
+                            <svg class="header__icon">
+                                <use
+                                    xlink:href="./img/sprite.svg#icon-bookmark"></use>
+                            </svg>
+                            <span class="message__number">08</span>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="icon__box">
+                            <svg class="header__icon">
+                                <use
+                                    xlink:href="./img/sprite.svg#icon-chat"></use>
+                            </svg>
+                            <span class="message__number">20</span>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <img
+                            src="./img/person-sm.jpg"
+                            alt="user photo"
+                            class="user__img" />
+                        <span class="user__name">SBudha</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- *** End of Header Section *** -->
+            <!-- *** Side Navigation Section *** -->
+
+            <div class="content__container">
+                <nav class="navigation">
+                    <ul class="navigation__itms">
+                        <li class="navigation__itm nav--active">
+                            <a href="#" class="navigation__link">
+                                <svg class="navigation__icon">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-home"></use>
+                                </svg>
+                                Hotel</a
+                            >
+                        </li>
+                        <li class="navigation__itm">
+                            <a href="#" class="navigation__link">
+                                <svg class="navigation__icon">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                Flight</a
+                            >
+                        </li>
+                        <li class="navigation__itm">
+                            <a href="#" class="navigation__link">
+                                <svg class="navigation__icon">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-key"></use>
+                                </svg>
+                                Car Rental</a
+                            >
+                        </li>
+                        <li class="navigation__itm">
+                            <a href="#" class="navigation__link">
+                                <svg class="navigation__icon">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-map"></use>
+                                </svg>
+                                Tours</a
+                            >
+                        </li>
+                    </ul>
+
+                    <footer class="footer">
+                        <p class="footer__rights">
+                            Trillo &copy; 2023 All Rights Reserved
+                        </p>
+                    </footer>
+                </nav>
+
+                <main class="hotel">
+                    <div class="gallery">
+                        <figure class="gallery__itm">
+                            <img
+                                class="gallery__img"
+                                src="./img/hotel-1.jpg"
+                                alt="photo of hotel" />
+                        </figure>
+                        <figure class="gallery__itm">
+                            <img
+                                class="gallery__img"
+                                src="./img/hotel-2.jpg"
+                                alt="photo of hotel" />
+                        </figure>
+                        <figure class="gallery__itm">
+                            <img
+                                class="gallery__img"
+                                src="./img/hotel-3.jpg"
+                                alt="photo of hotel" />
+                        </figure>
+                    </div>
+                    <div class="hotel__detail">
+                        <div class="hotel__title">
+                            <h3 class="hotel__name">Hotel Las Palmas</h3>
+                            <div class="hotel__rating">
+                                <svg class="hotel__star">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="hotel__star">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="hotel__star">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="hotel__star">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="hotel__star">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <a class="btn__link" href="#">
+                                <svg class="location__icon">
+                                    <use
+                                        xlink:href="./img/sprite.svg#icon-location-pin"></use>
+                                </svg>
+                                <span class="btn">Sangrila, Singapore</span></a
+                            >
+                            <p class="voting__number">
+                                8.6 <span class="votes">500 votes</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <section class="about">
+                        <div class="about__content">
+                            <p class="about__paragraph">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Laboriosam iste blanditiis sed
+                                veritatis nesciunt animi sit eos explicabo
+                                officia nisi? Sed, minus ullam!
+                            </p>
+                            <p class="about__paragraph">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Odio facere blanditiis unde
+                                recusandae dolores sapiente.
+                            </p>
+                            <ul class="feature">
+                                <li class="feature__list">
+                                    <svg class="feature__icon">
+                                        <use
+                                            xlink:href="./img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Close to the mountain
+                                </li>
+                                <li class="feature__list">
+                                    <svg class="feature__icon">
+                                        <use
+                                            xlink:href="./img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Free airport shuttle
+                                </li>
+                                <li class="feature__list">
+                                    <svg class="feature__icon">
+                                        <use
+                                            xlink:href="./img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Air conditioning and heating
+                                </li>
+                                <li class="feature__list">
+                                    <svg class="feature__icon">
+                                        <use
+                                            xlink:href="./img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    We speak all language
+                                </li>
+                                <li class="feature__list">
+                                    <svg class="feature__icon">
+                                        <use
+                                            xlink:href="./img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Breakfast included
+                                </li>
+                                <li class="feature__list">
+                                    <svg class="feature__icon">
+                                        <use
+                                            xlink:href="./img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Free wifi in all rooms
+                                </li>
+                                <li class="feature__list">
+                                    <svg class="feature__icon">
+                                        <use
+                                            xlink:href="./img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Pets allowed
+                                </li>
+                                <li class="feature__list">
+                                    <svg class="feature__icon">
+                                        <use
+                                            xlink:href="./img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Perfect for families
+                                </li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__text">
+                                    Maya and 3 other friends recommend this
+                                    hotel
+                                </p>
+                                <div class="photo">
+                                    <img
+                                        class="photo__user"
+                                        src="./img/person-sm.jpg"
+                                        alt="user photo" />
+                                    <img
+                                        class="photo__user"
+                                        src="./img/person-sm.jpg"
+                                        alt="user photo" />
+                                    <img
+                                        class="photo__user"
+                                        src="./img/person-sm.jpg"
+                                        alt="user photo" />
+                                    <img
+                                        class="photo__user"
+                                        src="./img/person-sm.jpg"
+                                        alt="user photo" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- *** Review *** -->
+                        <figure class="review">
+                            <figure class="review__content">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quam, explicabo adipisci
+                                    libero iste quaerat ab.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img
+                                        src="./img/person-sm.jpg"
+                                        alt="user photo"
+                                        class="review__user__photo" />
+                                    <div class="review__name__date">
+                                        <h3 class="review__user__name">
+                                            Black Budha
+                                        </h3>
+                                        <p class="review__date">
+                                            Jun 29th 2023
+                                        </p>
+                                    </div>
+                                    <span class="review__rate">8.8</span>
+                                </figcaption>
+                            </figure>
+                            <figure class="review__content">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quam,
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img
+                                        src="./img/person-sm.jpg"
+                                        alt="user photo"
+                                        class="review__user__photo" />
+                                    <div class="review__name__date">
+                                        <h3 class="review__user__name">
+                                            Migen Smith
+                                        </h3>
+                                        <p class="review__date">
+                                            Jun 29th 2023
+                                        </p>
+                                    </div>
+                                    <span class="review__rate">9.8</span>
+                                </figcaption>
+                            </figure>
+                            <a class="btn__link" href="#">
+                                <p class="review__btn">
+                                    <span> Show all </span>
+                                    &rarr;
+                                </p>
+                            </a>
+                        </figure>
+                    </section>
+                    <section class="cta">
+                        <h2 class="cta__heading">
+                            Good news! We have 4 free rooms for your selected
+                            dates!
+                        </h2>
+                        <button class="cta__btn">
+                            <span class="cta__btn__shown">Book Now</span>
+                            <span class="cta__btn__hidden"
+                                >Only 4 rooms left!</span
+                            >
+                        </button>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
